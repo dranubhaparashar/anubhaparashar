@@ -1,0 +1,1 @@
+import"./zh_TW.C06wvV0o.js";function u(o,n){const t=o.replace(/^\/|\/$/g,"").toLowerCase(),e=n.replace(/^\/|\/$/g,"").toLowerCase();return t===e}function r(...o){return o.join("/").replace(/\/+/g,"/")}function c(o){return a(`/posts/${o}/`)}function a(o){return r("","/docs/",o)}export{c as g,u as p,a as u};
