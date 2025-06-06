@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-[var(--page-bg)] transition text-[14px] md:text-[16px]" data-overlayscrollbars-initialize data-astro-cid-sckkx6r4 style="--bannerOffset: 15vh;--banner-height-home: 65vh;--banner-height: 35vh;--configHue: 250;--page-width: 75rem;">
+  <head>
+    <title>Fuwari - Demo Site</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Fuwari - Demo Site">
+    <meta name="author" content="Lorem Ipsum">
+    <meta property="og:site_name" content="Fuwari">
+    <meta property="og:url" content="https://dranubhaparashar.github.io/anubhaparashar/">
+    <meta property="og:title" content="Fuwari - Demo Site">
+    <meta property="og:description" content="Fuwari - Demo Site">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://dranubhaparashar.github.io/anubhaparashar/">
+    <meta name="twitter:title" content="Fuwari - Demo Site">
+    <meta name="twitter:description" content="Fuwari - Demo Site">
+    <meta name="viewport" content="width=device-width">
+    <meta name="generator" content="Astro v5.8.1">
+    <link rel="icon" href="/dranubhaparashar/anubhaparashar/favicon/favicon-light-32.png" sizes="32x32" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="/dranubhaparashar/anubhaparashar/favicon/favicon-light-128.png" sizes="128x128" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="/dranubhaparashar/anubhaparashar/favicon/favicon-light-180.png" sizes="180x180" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="/dranubhaparashar/anubhaparashar/favicon/favicon-light-192.png" sizes="192x192" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="/dranubhaparashar/anubhaparashar/favicon/favicon-dark-32.png" sizes="32x32" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="/dranubhaparashar/anubhaparashar/favicon/favicon-dark-128.png" sizes="128x128" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="/dranubhaparashar/anubhaparashar/favicon/favicon-dark-180.png" sizes="180x180" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="/dranubhaparashar/anubhaparashar/favicon/favicon-dark-192.png" sizes="192x192" media="(prefers-color-scheme: dark)">
+    <script>
+      (function() {
+        const DEFAULT_THEME = "auto";
+        const LIGHT_MODE = "light";
+        const DARK_MODE = "dark";
+        const AUTO_MODE = "auto";
+        const BANNER_HEIGHT_EXTEND = 30;
+        const PAGE_WIDTH = 75;
+        const configHue = 250;
+
+        // Load the theme from local storage
+        const theme = localStorage.getItem('theme') || DEFAULT_THEME;
+        switch (theme) {
+          case LIGHT_MODE:
+            document.documentElement.classList.remove('dark');
+            break
+          case DARK_MODE:
+            document.documentElement.classList.add('dark');
+            break
+          case AUTO_MODE:
+            if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+              document.documentElement.classList.add('dark');
+            } else {
+              document.documentElement.classList.remove('dark');
+            }
+        }
+
+        // Load the hue from local storage
+        const hue = localStorage.getItem('hue') || configHue;
+        document.documentElement.style.setProperty('--hue', hue);
+
+        // calculate the --banner-height-extend, which needs to be a multiple of 4 to avoid blurry text
+        let offset = Math.floor(window.innerHeight * (BANNER_HEIGHT_EXTEND / 100));
+        offset = offset - offset % 4;
+        document.documentElement.style.setProperty('--banner-height-extend', `${offset}px`);
+      })();
+    </script>
+    <link rel="alternate" type="application/rss+xml" title="Lorem Ipsum" href="https://dranubhaparashar.github.io/anubhaparashar/rss.xml">
+    <link rel="stylesheet" href="/dranubhaparashar/anubhaparashar/_astro/Layout.DSulWsr7.css">
+    <link rel="stylesheet" href="/dranubhaparashar/anubhaparashar/_astro/Layout.CFwGdNXj.css">
+    <link rel="stylesheet" href="/dranubhaparashar/anubhaparashar/_astro/_page_.CcsOqFif.css">
+    <link rel="stylesheet" href="/dranubhaparashar/anubhaparashar/_astro/_page_.BaLQRSsF.css">
+    <link rel="stylesheet" href="/dranubhaparashar/anubhaparashar/_astro/about.BtniRLn_.css">
+    <style>
+      input.svelte-1adkdfv:focus{outline:0}
+      .search-panel.svelte-1adkdfv{max-height:calc(100vh - 100px);overflow-y:auto}
+      #display-setting.svelte-1s19bex input[type=range]:where(.svelte-1s19bex){-webkit-appearance:none;height:1.5rem;background-image:var(--color-selection-bar);transition:background-image .15s ease-in-out}
+      #display-setting.svelte-1s19bex input[type=range]:where(.svelte-1s19bex)::-webkit-slider-thumb{-webkit-appearance:none;height:1rem;width:.5rem;border-radius:.125rem;background:#ffffffb3;box-shadow:none}
+      #display-setting.svelte-1s19bex input[type=range]:where(.svelte-1s19bex)::-webkit-slider-thumb:hover{background:#fffc}
+      #display-setting.svelte-1s19bex input[type=range]:where(.svelte-1s19bex)::-webkit-slider-thumb:active{background:#fff9}
+      #display-setting.svelte-1s19bex input[type=range]:where(.svelte-1s19bex)::-moz-range-thumb{-webkit-appearance:none;height:1rem;width:.5rem;border-radius:.125rem;border-width:0;background:#ffffffb3;box-shadow:none}
+      #display-setting.svelte-1s19bex input[type=range]:where(.svelte-1s19bex)::-moz-range-thumb:hover{background:#fffc}
+      #display-setting.svelte-1s19bex input[type=range]:where(.svelte-1s19bex)::-moz-range-thumb:active{background:#fff9}
+      #display-setting.svelte-1s19bex input[type=range]:where(.svelte-1s19bex)::-ms-thumb{-webkit-appearance:none;height:1rem;width:.5rem;border-radius:.125rem;background:#ffffffb3;box-shadow:none}
+      #display-setting.svelte-1s19bex input[type=range]:where(.svelte-1s19bex)::-ms-thumb:hover{background:#fffc}
+      #display-setting.svelte-1s19bex input[type=range]:where(.svelte-1s19bex)::-ms-thumb:active{background:#fff9}
+    </style>
+    <script type="module" src="/dranubhaparashar/anubhaparashar/_astro/page.jj7xkuA2.js"></script>
+  </head>
+
+  <body class="min-h-screen transition lg:is-home" data-overlayscrollbars-initialize data-astro-cid-sckkx6r4 style="--bannerOffset: 15vh;--banner-height-home: 65vh;--banner-height: 35vh;--configHue: 250;--page-width: 75rem;">
+    <!-- Your content here, ensure all links and paths are adjusted accordingly -->
+  </body>
+</html>
