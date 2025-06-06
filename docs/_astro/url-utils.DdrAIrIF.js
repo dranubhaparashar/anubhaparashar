@@ -1,0 +1,1 @@
+import"./zh_TW.C06wvV0o.js";function u(n,r){const o=n.replace(/^\/|\/$/g,"").toLowerCase(),t=r.replace(/^\/|\/$/g,"").toLowerCase();return o===t}function e(...n){return n.join("/").replace(/\/+/g,"/")}function i(n){return a(`/posts/${n}/`)}function a(n){return e("","/anubhaparashar/",n)}export{i as g,u as p,a as u};
